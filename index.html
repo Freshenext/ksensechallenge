@@ -72,7 +72,6 @@
     const fetchUser = () => {
         $.get(USER_ENDPOINT)
         .then((users) => {
-            console.log(users);
             $('#users').html(users.map(user => userTr(user)));
         })
     }
